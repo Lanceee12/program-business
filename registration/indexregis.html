@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+  <h1>Registration Form</h1>
+  <form action="#" method="post">
+    
+    <!-- Full Name -->
+    <div class="form-group">
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" name="fullname" required placeholder="Input your full name here">
+    </div>
+
+    <!-- Email -->
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required placeholder="Input your email here">
+    </div>
+
+    <!-- Phone Number -->
+    <div class="form-group">
+      <label for="phone">Phone Number</label>
+      <input type="text" id="phone" name="phone" required placeholder="Input your phone number here">
+    </div>
+
+    <!-- Gender -->
+    <div class="form-group">
+        <label>Gender</label>
+        <div class="inline-options">
+            <label><input type="radio" name="gender" value="Male"> Male</label>
+            <label><input type="radio" name="gender" value="Female"> Female</label>
+            <label><input type="radio" name="gender" value="Other"> Other</label>
+        </div>
+    </div>
+  
+    <!-- Hobbies -->
+    <div class="form-group">
+        <label>Hobbies</label>
+        <div class="inline-options">
+            <label><input type="checkbox" name="hobbies" value="Reading"> Reading</label>
+            <label><input type="checkbox" name="hobbies" value="Sports"> Sports</label>
+            <label><input type="checkbox" name="hobbies" value="Music"> Music</label>
+            <label><input type="checkbox" name="hobbies" value="Travel"> Travel</label>
+            <label><input type="checkbox" name="hobbies" value="Singing"> Singing</label>
+        </div>
+    </div>
+  
+
+    <!-- Date of Birth -->
+    <div class="form-group">
+      <label for="dob">Date of Birth</label>
+      <input type="date" id="dob" name="dob" required>
+    </div>
+
+    <!-- Program of Study -->
+    <div class="form-group">
+      <label for="program">Program of Study</label>
+      <select id="program" name="program" required>
+        <option value="">-- Select Program --</option>
+        <option value="computer-science">Computer Science</option>
+        <option value="arts">System Information</option>
+        <option value="tourism">Tourism</option>
+        <option value="humanities">Humanities</option>
+        <option value="communication">Communication</option>
+        <option value="accounting">Accounting</option>
+        <option value="engineering">Engineering</option>
+        <option value="business">Business</option>
+        <option value="arts & design">Art & Design</option>
+      </select>
+    </div>
+
+    <!-- Address -->
+    <div class="form-group">
+      <label for="address">Full Address</label>
+      <textarea id="address" name="address" rows="4" required placeholder="Input your address here"></textarea>
+    </div>
+
+    <!-- Submit -->
+    <input class="submit" type="submit" value="Submit" >
+    <script>
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            alert('Form submitted successfully!');
+        });
+    </script>
+  </form>
+</body>
+</html>

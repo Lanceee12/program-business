@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #ff4141, #4ea7ff);
+  margin: 0;
+  padding: 20px;
+  border: 5px solid #200000;
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-shadow:
+    -2px -2px 0 #000,
+    1px -1px 0 #000
+}
+
+/* Form Container */
+form {
+  max-width: 530px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.5);
+}
+
+/* Labels and input */
+label {
+  display: block;
+  margin: 8px 0 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+input, select, textarea, button {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #3d0909;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* circle choice and checkboxes */
+.inline-options {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+#program {
+  width: 99%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.inline-options label {
+  display: flex;
+  align-items: center;
+  gap: 4px;        
+  font-weight: normal;
+  margin: 2px 0;
+}
+
+.inline-options input[type="radio"],
+.inline-options input[type="checkbox"] {
+  vertical-align: middle;   
+  margin-top: 14px;        
+  margin-right: 9px; 
+    width: 14px;
+}
+
+/* Submit */
+.submit {
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  border: 1px solid #3d0909;
+  cursor: pointer;
+  transition: background 0.3s;
+  display: block;
+  margin: 0 auto;
+}
+
+.submit:hover {
+  background-color: #0056b3;
+}

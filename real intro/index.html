@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Introduction</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Hello</h1>
+    <h2>Welcome to My Introduction</h2>
+  </header>
+
+  <img src="stillme.jpeg" alt="Profile Picture" class="profile-pic">
+
+  <div class="tab-container">
+    <button class="tab-btn active abot" onclick="openTab(event, 'about')">About Me</button>
+    <button class="tab-btn hob" onclick="openTab(event, 'hobbies')">Hobbies & Interests</button>
+    <button class="tab-btn work" onclick="openTab(event, 'my-works')">My Works</button> 
+  </div>
+
+  <div id="about" class="tab-content active">
+    <p>Hello! My name is Victoria Tansanjaya. I was born in Jakarta, October 12 2006. I love technology and being creative. I'm a B28 Information System student from Binus @Kemanggisan. I just live, laugh, love. That's all (˶º⤙º˶)</p>
+  </div>
+  <div id="hobbies" class="tab-content">
+    <ul>
+      <li>Playing games</li>
+      <li>Eeping</li>
+      <li>Stare at people</li>
+      <li>Enjoys bad humor and dad jokes</li>
+      <li>Likes cats</li>
+    </ul>
+  </div>
+
+  <div id="my-works" class="tab-content">
+    <ul>
+      <li>First work: <a href="https://lanceee12.github.io/Victoria_Registration-Form/">Registration html</li></a>
+      <li>Second work: <a href="">WIP</li></a>
+    </ul>
+  </div>
+
+  <section class="dynamic">
+    <h2>This is my instagram account</h2>
+    <p>Instagram:
+      <a href="https://www.instagram.com/vicneedslife/" target="_blank">vicneedslife</a>
+    </p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

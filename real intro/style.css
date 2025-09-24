@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f5f5;
+  color: #333;
+}
+
+header {
+  background: #0077cc;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 3px solid #0077cc;
+  margin: 20px;
+  position: relative;
+  animation: slide 10s infinite alternate;  
+  }
+
+  @keyframes slide {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(calc(100vw - 200px)); }  
+}
+
+
+.tab-container {
+  display: flex;
+  justify-content: center; 
+  gap: 10px;              
+  margin: 20px auto;
+}
+
+.tab-btn {
+  background: #ddd;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 0 5px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.tab-btn.active {
+  background: #0077cc;
+  color: white;
+}
+
+.tab-btn:hover:not(.active) {
+  background: #82cbff;
+  color: white;
+}
+
+.tab-content {
+  display: none;
+  background: white;
+  width: 70%;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.tab-content.active {
+  display: block;
+}
+
+ul {
+  list-style-type: square;
+  list-style-position: inside;
+  padding-left: 0px;
+}
+
+.tab-content,
+section.dynamic {
+  text-align: center;      
+  margin: 5px auto;        
+  padding: 10px;
+}
+
